@@ -13,6 +13,30 @@ public class Benutzer {
         this.sportList = sportList;
     }
 
+    public String getVorName() {
+        return vorName;
+    }
+
+    public void setVorName(String vorName) {
+        this.vorName = vorName;
+    }
+
+    public String getNachName() {
+        return nachName;
+    }
+
+    public void setNachName(String nachName) {
+        this.nachName = nachName;
+    }
+
+    public List<Sport> getSportList() {
+        return sportList;
+    }
+
+    public void setSportList(List<Sport> sportList) {
+        this.sportList = sportList;
+    }
+
     public double kalkuliereZeit(){
         double sum = 0;
         for (Sport i : sportList){
