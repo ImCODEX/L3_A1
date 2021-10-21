@@ -2,7 +2,8 @@ package Sport;
 
 public class Hochsprung extends Leichtathletik{
 
-    public double calculateZeit(){
+    @Override
+    public double kalkuliereZeit(){
         return 20;
     }
 }

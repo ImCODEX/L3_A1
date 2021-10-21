@@ -2,7 +2,9 @@ package Sport;
 
 public class Basketball extends Mannschaftssport{
 
-    public double calculateZeit(){
+
+
+    public double kalkuliereZeit(){
         return 55;
     }
 }

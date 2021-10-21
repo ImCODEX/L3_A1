@@ -37,6 +37,10 @@ public class Benutzer {
         this.sportList = sportList;
     }
 
+    /**
+     * Macht die Summe aller Zeiten
+     * @return sum
+     */
     public double kalkuliereZeit(){
         double sum = 0;
         for (Sport i : sportList){
@@ -45,10 +49,19 @@ public class Benutzer {
         return sum;
     }
 
+    /**
+     * Zuruckgibt die Zeit fur ein beliebiges Sport
+     * @param s - Sport
+     * @return - Zeit
+     */
     public double kalkuliereZeit(Sport s){
         return s.kalkuliereZeit();
     }
 
+    /**
+     * Mach die Durschnittszeit fur alle LieblingsSporte
+     * @return average
+     */
     public double kalkuriereDurschnittszeit(){
         double avg = 0;
         for (Sport i : sportList){

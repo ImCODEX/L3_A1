@@ -2,7 +2,8 @@ package Sport;
 
 public class Hindernislauf extends Leichtathletik{
 
-    public double calculateZeit(){
+    @Override
+    public double kalkuliereZeit(){
         return 30;
     }
 }
