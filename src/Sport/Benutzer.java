@@ -1,6 +1,5 @@
 package Sport;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Benutzer {
@@ -14,5 +13,25 @@ public class Benutzer {
         this.sportList = sportList;
     }
 
-    
+    public double kalkuliereZeit(){
+        double sum = 0;
+        for (Sport i : sportList){
+            sum += i.kalkuliereZeit();
+        }
+        return sum;
+    }
+
+    public double kalkuliereZeit(Sport s){
+        return s.kalkuliereZeit();
+    }
+
+    public double kalkuriereDurschnittszeit(){
+        double avg = 0;
+        for (Sport i : sportList){
+            avg += i.kalkuliereZeit();
+        }
+        avg/=sportList.size();
+        return avg;
+    }
+
 }
