@@ -4,29 +4,29 @@ import java.util.List;
 
 public class Benutzer {
 
-    private String vorName, nachName;
+    private String vorname, nachname;
     private List<Sport> sportList;
 
-    public Benutzer(String vorName, String nachName, List<Sport> sportList) {
-        this.vorName = vorName;
-        this.nachName = nachName;
+    public Benutzer(String vorname, String nachname, List<Sport> sportList) {
+        this.vorname = vorname;
+        this.nachname = nachname;
         this.sportList = sportList;
     }
 
-    public String getVorName() {
-        return vorName;
+    public String getVorname() {
+        return vorname;
     }
 
-    public void setVorName(String vorName) {
-        this.vorName = vorName;
+    public void setVorname(String vorname) {
+        this.vorname = vorname;
     }
 
-    public String getNachName() {
-        return nachName;
+    public String getNachname() {
+        return nachname;
     }
 
-    public void setNachName(String nachName) {
-        this.nachName = nachName;
+    public void setNachname(String nachname) {
+        this.nachname = nachname;
     }
 
     public List<Sport> getSportList() {
@@ -62,7 +62,7 @@ public class Benutzer {
      * Mach die Durschnittszeit fur alle LieblingsSporte
      * @return average
      */
-    public double kalkuriereDurschnittszeit(){
+    public double kalkuliereDurschnittszeit(){
         double avg = 0;
         for (Sport i : sportList){
             avg += i.kalkuliereZeit();
